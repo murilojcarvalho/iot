@@ -19,7 +19,7 @@ include('config_db.php');
 	 * Prepara a query sql a fim de selecionar todo o conteúdo 
 	 * da tabela sensores;
 	 */
-	$sql = "SELECT id, sensor_name, sensor_value, sensor_datetime FROM temperatura WHERE sensor_name = 'DHT11 temperatura'";
+	$sql = "SELECT id, sensor_name, sensor_value, sensor_datetime FROM DHT11 WHERE sensor_name = 'DHT11 temperatura'";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 	
